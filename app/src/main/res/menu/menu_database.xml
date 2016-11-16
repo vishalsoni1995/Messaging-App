@@ -1,0 +1,5 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" tools:context="com.vs.messaging.Database">
+    <item android:id="@+id/editdatabase" android:title="Edit Database"
+        android:orderInCategory="100" android:showAsAction="never" />
+</menu>
