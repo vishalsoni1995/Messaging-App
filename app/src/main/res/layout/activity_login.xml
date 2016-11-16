@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.chatt.Login" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/pad_20dp"
+        android:paddingLeft="@dimen/pad_15dp"
+        android:paddingRight="@dimen/pad_15dp"
+        android:paddingTop="@dimen/pad_20dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="119dp"
+            android:layout_height="119dp"
+            android:src="@drawable/e1"
+            android:layout_marginBottom="@dimen/pad_20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Your Database has been protected. Please enter your Username and Password !!"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ff61ba57" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:id="@+id/user"
+            android:textColorHint="#ff61ca38"
+            android:textColor="#ff61ca38"
+            style="@style/editext_graybg"
+            android:layout_width="300dp"
+            android:layout_height="54dp"
+
+            android:drawableLeft="@drawable/ic_account_circle_black_48dp"
+            android:hint="@string/username" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pass"
+            style="@style/editext_graybg"
+            android:layout_width="300dp"
+            android:textColorHint="#ff61ca38"
+            android:textColor="#ff61ca38"
+            android:layout_height="54dp"
+            android:layout_marginBottom="@dimen/pad_20dp"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:drawableLeft="@drawable/ic_https_black_48dp"
+            android:hint="@string/password"
+            android:inputType="numberPassword">
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/login"
+                style="@style/btn_white_large"
+                android:onClick="check"
+                android:layout_width="87dp"
+                android:layout_height="34dp"
+                android:text="Login" />
+
+            <Button
+                android:id="@+id/button2"
+                style="@style/btn_white_large"
+                android:layout_width="87dp"
+                android:layout_height="34dp"
+                android:text="Edit "
+                android:onClick="edit"
+                android:layout_marginLeft="@dimen/pad_10dp"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="127dp"
+            android:layout_gravity="center_horizontal">
+
+            <Button
+                android:layout_width="195dp"
+                android:layout_height="34dp"
+                android:text="Register For First Time"
+                style="@style/btn_white_large"
+                android:textAllCaps="false"
+                android:id="@+id/button"
+android:onClick="register"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="22dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Changet Password"
+                android:id="@+id/textView9"
+
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:onClick="forget" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

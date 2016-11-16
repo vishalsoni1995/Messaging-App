@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    tools:context="com.vs.messaging.About">
+
+
+    <Button
+        android:layout_width="match_parent"
+
+        android:text="Feedback"
+        style="@style/btn_white_large"
+
+        android:layout_height="48dp"
+        android:id="@+id/feedback"
+        android:onClick="feedback"
+        android:textAllCaps="false"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="47dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        style="@style/btn_white_large"
+        android:layout_height="48dp"
+        android:text="Help"
+        android:id="@+id/help"
+        android:onClick="help"
+        android:textAllCaps="false"
+        android:layout_below="@+id/feedback"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="56dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version - 1.0"
+        android:id="@+id/textView7"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/textView8" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Developer :"
+        android:id="@+id/textView8"
+        android:layout_marginTop="47dp"
+        android:layout_below="@+id/textView7"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vishal Soni &amp; Varun Panthri"
+        android:id="@+id/textView11"
+        android:layout_marginTop="28dp"
+        android:textColor="#ff6fb159"
+        android:layout_below="@+id/textView8"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Manav Rachna International University"
+        android:id="@+id/textView12"
+        android:layout_marginTop="25dp"
+        android:textColor="#ff2d6eb1"
+        android:layout_below="@+id/textView11"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>
